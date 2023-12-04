@@ -1,0 +1,11 @@
+https://github.com/shadowsocks/shadowsocks-libev/blob/master/docker/alpine/README.md
+
+$ mkdir -p ~/fig/shadowsocks/
+$ cd ~/fig/shadowsocks/
+$ curl -sSLO https://github.com/shadowsocks/shadowsocks-libev/raw/master/docker/alpine/docker-compose.yml
+$ docker-compose up -d
+$ docker-compose ps
+
+
+
+https://github.com/shadowsocks/shadowsocks-rust
