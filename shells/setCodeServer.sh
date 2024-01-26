@@ -16,4 +16,10 @@ docker run -it --name code-server -p 8080:8080 \
   -e "DOCKER_USER=$USER" \
   codercom/code-server:latest
 
-  docker cp -a .ssh code-server:/home/coder/
+# cert: /home/coder/certs/fullchain.cer
+# cert-key: /home/coder/certs/fweoijve.buzz.key
+
+chmod 600 ~/docker/code-server/.ssh/id_ed25519
+
+docker cp ~/docker/code-server/.ssh code-server:/home/coder/
+
