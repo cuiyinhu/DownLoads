@@ -26,7 +26,7 @@ fi
 #非交互式
 echo $name:$pass | sudo chpasswd  &>/dev/null
 
-echo $pass | sudo passwd $name --stdin  &>/dev/null
+#echo $pass | sudo passwd $name --stdin  &>/dev/null
 if [ $? -eq 0 ];then
    echo "${name}'s password is set successfully"
 else
@@ -39,6 +39,7 @@ fi
 #设置变量name接收第一个参数（用户名），$n表示第n个参数，且=两边不能有空格
 # name=$1
 
+echo "${name} set rsa start"
 sudo usermod -a -G sudo $name 
 sudo usermod -a -G adm $name
 sudo usermod -a -G docker $name 
