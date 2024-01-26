@@ -37,7 +37,7 @@ fi
 #!/bin/bash
 
 #设置变量name接收第一个参数（用户名），$n表示第n个参数，且=两边不能有空格
-name=$1
+# name=$1
 
 sudo usermod -a -G sudo $name 
 sudo usermod -a -G adm $name
