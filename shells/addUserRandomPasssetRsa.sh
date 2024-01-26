@@ -31,7 +31,7 @@ if [ $? -eq 0 ];then
    echo "${name}'s password is set successfully"
 else
    echo "${name}'s password is set failly!!!"
-   exit 1
+   # exit 1
 fi
 
 #!/bin/bash
